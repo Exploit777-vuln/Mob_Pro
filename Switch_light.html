@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>Click the button to turn the light on or off.</p>
+
+<button onclick="toggleLight()">Switch_Light</button>
+
+<br><br>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<script>
+function toggleLight() {
+  const image = document.getElementById("myImage");
+
+  if (image.src.includes("pic_bulboff")) {
+    image.src = "pic_bulbon.gif";
+  } else {
+    image.src = "pic_bulboff.gif";
+  }
+}
+</script>
+
+</body>
+</html>
