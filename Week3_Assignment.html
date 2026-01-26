@@ -1,0 +1,60 @@
+<!-- Assignment by Aditya Rai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web Page - Aditya Rai</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Simple CSS for mobile-friendly page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Mobile Web Page</h1>
+    <p>Assignment by <strong>Aditya Rai</strong></p>
+
+    <!-- Buttons to demonstrate jQuery -->
+    <button id="showMessageBtn">Click Me!</button>
+    <button id="hideMessageBtn">Hide Message</button>
+
+    <!-- Placeholder for jQuery action -->
+    <div id="message">Hello! This message is shown using jQuery.</div>
+
+    <!-- jQuery script -->
+    <script>
+        $(document).ready(function() {
+            // Show message
+            $("#showMessageBtn").click(function() {
+                $("#message").show();
+            });
+
+            // Hide message
+            $("#hideMessageBtn").click(function() {
+                $("#message").hide();
+            });
+
+            // Initially hide the message
+            $("#message").hide();
+        });
+    </script>
+</body>
+</html>
